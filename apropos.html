@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Santé Kènè</title>
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Script -->
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      feather.replace();
+
+      // Toggle content sections
+      const buttons = document.querySelectorAll(".toggle-btn");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const target = document.querySelector(btn.dataset.target);
+          target.classList.toggle("hidden");
+          btn.textContent = target.classList.contains("hidden") ? "En savoir plus" : "Réduire";
+        });
+      });
+    });
+  </script>
+</head>
+<body class="font-poppins bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+          <a href="index.html" class="flex items-center space-x-3">
+              <img src="images/logoSANTE KENE.jpeg" alt="Santé Kènè logo" class="w-10 h-10 rounded-full shadow-md">
+              <span class="text-xl font-bold bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">Santé Kènè</span>
+          </a>
+          <div class="hidden md:flex items-center space-x-6">
+              <a href="index.html" class="text-gray-700 hover:text-[var(--primary)]">Accueil</a>
+              <a href="#" class="text-gray-700 hover:text-[var(--primary)] font-bold border-b-2 border-[var(--primary)]">À propos</a>
+              <a href="signup.html" class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300">S'inscrire</a>
+          </div>
+          <div class="md:hidden">
+              <button id="mobile-menu-button" class="text-gray-700">
+                  <i data-feather="menu"></i>
+              </button>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--secondary)]/5 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+        À propos de <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">Santé Kènè</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Découvrez notre vision, notre équipe, nos réalisations et nos perspectives pour transformer l’accès aux soins en Afrique grâce à l’innovation numérique.
+      </p>
+  </section>
+
+  <!-- Main Sections -->
+  <main class="container mx-auto px-6 space-y-16">
+
+    <!-- Notre Histoire -->
+    <section id="histoire" class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+      <div class="flex items-start space-x-6">
+        <i data-feather="book" class="text-[var(--primary)] w-12 h-12 mt-1"></i>
+        <div>
+          <h2 class="text-2xl font-bold text-[var(--primary)] mb-2">Notre Histoire</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Santé Kènè est née du constat que l’accès aux soins reste un défi majeur en Afrique. 
+            Face aux longues distances, au manque de personnel médical et aux barrières linguistiques, 
+            nous avons imaginé une solution numérique capable de rapprocher les patients et les professionnels.
+          </p>
+          <div id="histoire-more" class="hidden mt-2 text-gray-600">
+            Cette solution garantit la traçabilité et la sécurité des données grâce à la technologie Hedera. 
+            Nous avons commencé par un prototype pilote et avons rapidement testé notre approche dans plusieurs communautés.
+          </div>
+          <button class="toggle-btn mt-2 text-[var(--primary)] font-semibold" data-target="#histoire-more">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notre Mission -->
+    <section id="mission" class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+      <div class="flex items-start space-x-6">
+        <i data-feather="target" class="text-[var(--secondary)] w-12 h-12 mt-1"></i>
+        <div>
+          <h2 class="text-2xl font-bold text-[var(--secondary)] mb-2">Notre Mission</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Révolutionner l’accès aux soins en Afrique via une IA vocale multilingue et un registre immuable sur Hedera.
+          </p>
+          <div id="mission-more" class="hidden mt-2 text-gray-600">
+            Nous mettons en place un système d’incitation KÈNÈPOINTS pour encourager le suivi médical. 
+            Inclusion, sécurité et transparence sont au cœur de notre action.
+          </div>
+          <button class="toggle-btn mt-2 text-[var(--secondary)] font-semibold" data-target="#mission-more">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notre Équipe -->
+    <section id="equipe" class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+      <div class="flex items-start space-x-6">
+        <i data-feather="users" class="text-[var(--primary)] w-12 h-12 mt-1"></i>
+        <div>
+          <h2 class="text-2xl font-bold text-[var(--primary)] mb-2">Notre Équipe</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Une équipe pluridisciplinaire composée de développeurs, médecins, chercheurs et experts blockchain, dédiée à construire une solution éthique et adaptée aux réalités locales.
+          </p>
+          <div id="equipe-more" class="hidden mt-2 text-gray-600">
+            Chaque membre apporte son expertise pour créer un produit fonctionnel, sécurisé et centré sur l’utilisateur.
+          </div>
+          <button class="toggle-btn mt-2 text-[var(--primary)] font-semibold" data-target="#equipe-more">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos Partenaires -->
+    <section id="partenaires" class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+      <div class="flex items-start space-x-6">
+        <i data-feather="handshake" class="text-[var(--secondary)] w-12 h-12 mt-1"></i>
+        <div>
+          <h2 class="text-2xl font-bold text-[var(--secondary)] mb-2">Nos Partenaires</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Nous collaborons avec institutions de santé, universités et partenaires technologiques pour assurer rigueur scientifique et déploiement sur le terrain.
+          </p>
+          <div id="partenaires-more" class="hidden mt-2 text-gray-600">
+            Ces partenariats permettent de renforcer notre crédibilité et d’accélérer l’impact de notre solution sur le terrain.
+          </div>
+          <button class="toggle-btn mt-2 text-[var(--secondary)] font-semibold" data-target="#partenaires-more">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos Réalisations -->
+    <section id="realisations" class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition-all duration-300">
+      <div class="flex items-start space-x-6">
+        <i data-feather="award" class="text-[var(--primary)] w-12 h-12 mt-1"></i>
+        <di

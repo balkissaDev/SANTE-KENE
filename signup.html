@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | HealthGenie AI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --primary: #1CB5E0;
+            --secondary: #00C9A7;
+            --dark: #1E293B;
+            --light: #F8FAFC;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold flex items-center">
+                        <i data-feather="activity" class="text-[var(--primary)] mr-2"></i>
+                        <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">Santé KENE</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-[var(--primary)]">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-[var(--primary)]">About</a>
+                    <a href="#" class="text-gray-700 hover:text-[var(--primary)]">Features</a>
+                    <a href="#" class="text-gray-700 hover:text-[var(--primary)]">Security</a>
+                    <a href="index.html" class="text-gray-700 hover:text-[var(--primary)]">Resources</a>
+                    <a href="signup.html" class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300">Sign Up</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6 min-h-screen">
+        <div class="container mx-auto max-w-md">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] p-6 text-center">
+                    <h1 class="text-2xl font-bold text-white">Create Your santé Kene Account</h1>
+                    <p class="text-white/90 mt-2">Join the healthcare revolution today</p>
+                </div>
+                
+                <div class="p-8">
+                    <form id="signup-form">
+                        <div class="mb-6">
+                            <label for="fullname" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <div class="relative">
+                                <i data-feather="user" class="absolute left-3 top-3 text-gray-400"></i>
+                                <input type="text" id="fullname" name="fullname" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="John Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <div class="relative">
+                                <i data-feather="mail" class="absolute left-3 top-3 text-gray-400"></i>
+                                <input type="email" id="email" name="email" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="language" class="block text-gray-700 font-medium mb-2">Preferred Language</label>
+                            <div class="relative">
+                                <i data-feather="globe" class="absolute left-3 top-3 text-gray-400"></i>
+                                <select id="language" name="language" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent appearance-none" required>
+                                    <option value="" disabled selected>Select your language</option>
+                                    <option value="french">French</option>
+                                    <option value="english">English</option>
+                                    <option value="bambara">Bambara</option>
+                                    <option value="peulh">Peulh</option>
+                                    <option value="songhai">Songhai</option>
+                                </select>
+                                <i data-feather="chevron-down" class="absolute right-3 top-3 text-gray-400 pointer-events-none"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                            <div class="relative">
+                                <i data-feather="lock" class="absolute left-3 top-3 text-gray-400"></i>
+                                <input type="password" id="password" name="password" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="••••••••" required>
+                                <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-gray-600" id="toggle-password">
+                                    <i data-feather="eye"></i>
+                                </button>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">Minimum 8 characters with numbers and symbols</p>
+                        </div>
+                        
+                        <div class="mb-6 flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="terms" name="terms" type="checkbox" class="w-4 h-4 text-[var(--primary)] rounded focus:ring-[var(--primary)] border-gray-300" required>
+                            </div>
+                            <label for="terms" class="ml-2 block text-sm text-gray-700">
+                                I agree to the <a href="#" class="text-[var(--primary)] hover:underline">Terms of Service</a> and <a href="#" class="text-[var(--primary)] hover:underline">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+                            <span>Create Account</span>
+                            <i data-feather="arrow-right" class="ml-2"></i>
+                        </button>
+                        
+                        <div class="mt-6 text-center text-sm text-gray-600">
+                            Already have an account? <a href="#" class="text-[var(--primary)] font-medium hover:underline">Log in</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-xl font-bold flex items-center">
+                        <i data-feather="activity" class="text-[var(--primary)] mr-2"></i>
+                        <span class="text-white">HealthGenie</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+                    <span>© 2023 HealthGenie AI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Toggle password visibility
+        document.getElementById('toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.setAttribute('data-feather', 'eye-off');
+            } else {
+                passwordInput.type = 'password';
+                icon.setAttribute('data-feather', 'eye');
+            }
+            feather.replace();
+        });
+        
+        // Form submission
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const terms = document.getElementById('terms').checked;
+            
+            if (!fullname || !email || !password || !terms) {
+                alert('Please fill in all required fields and agree to the terms.');
+                return;
+            }
+            
+            // In a real app, you would send this data to your backend
+            alert(`Welcome to HealthGenie, ${fullname}! Your account has been created successfully. Check your email (${email}) for verification.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Scroll effect for navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
