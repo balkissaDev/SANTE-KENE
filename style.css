@@ -142,3 +142,142 @@
     color: var(--secondary);
   }
     
+  /* ================= Responsive Media Queries ================= */
+
+/* Mobile devices (portrait phones, <640px) */
+@media (max-width: 639px) {
+  /* Hero section text size */
+  section h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  section p {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .feature-content {
+    text-align: center !important;
+    padding: 10px;
+  }
+
+  .feature-card {
+    padding: 20px !important;
+  }
+
+  .feature-card h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .feature-card p {
+    font-size: 0.95rem !important;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    text-align: center;
+  }
+
+  footer .border-t {
+    flex-direction: column !important;
+  }
+}
+
+/* Tablets (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  section h1 {
+    font-size: 3rem !important;
+    text-align: center;
+  }
+
+  section p {
+    font-size: 1.1rem !important;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .feature-content {
+    text-align: left !important;
+    padding: 15px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.4rem !important;
+  }
+
+  .feature-card p {
+    font-size: 1rem !important;
+  }
+}
+
+/* Large screens (desktops, 1024px+) */
+@media (min-width: 1024px) {
+  section h1 {
+    font-size: 4.5rem !important;
+    text-align: left;
+  }
+
+  section p {
+    font-size: 1.25rem !important;
+    text-align: left;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.6rem !important;
+  }
+
+  .feature-card p {
+    font-size: 1.05rem !important;
+  }
+}
+
+/* Ensure images scale properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix dropdown menu overflow on mobile */
+.dropdown-menu {
+  min-width: 150px;
+  max-width: 90vw;
+  overflow-wrap: break-word;
+}
+
+/* Adjust modal for small screens */
+#featureModal > div {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Buttons and links touch targets */
+button, a {
+  min-height: 40px;
+  min-width: 40px;
+}
+
+/* Smooth scaling on hover for smaller devices */
+@media (max-width: 1023px) {
+  section:hover, .feature-card:hover, button:hover, a:hover {
+    transform: none !important;
+  }
+}
