@@ -10,6 +10,70 @@ body {
   margin: 0;
   background-color: var(--light);
 }
+/* Header / Hero accent */
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;           /* la “rose” en bas du header */
+  width: 100%;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  transition: background 0.5s ease, transform 0.5s ease;
+}
+
+/* Quand on scroll, le header change l’accent */
+header.scrolled::after {
+  background: linear-gradient(to right, #FF6B6B, #FF8E72); /* rose dynamique */
+  transform: scaleX(1.05); /* léger effet de mouvement */
+}
+
+
+/* Navbar links animation */
+nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--secondary);
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Navbar scroll effect */
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.95); /* plus opaque */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Décalage léger pour le menu mobile */
+#mobile-menu {
+  top: 70px; /* Descend un peu depuis le haut */
+}
+
+/* Optionnel : transition douce pour les liens */
+nav a {
+  transition: color 0.3s ease;
+}
+
+
 
 /* Navbar */
 nav {
@@ -296,6 +360,42 @@ section h2 {
   font-size: 2rem;
   margin-top: 3rem;
 }
+/* Partenaires responsive */
+#partners-content .flex {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #partners-content .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  #partners-content .flex div {
+    width: 100% !important;
+  }
+  #partners-content img {
+    margin: 0 auto;
+  }
+}
+/* Partenaires responsive */
+#partners-content .flex {
+  align-items: flex-start;
+}
+
+/* Mobile : stack vertical */
+@media (max-width: 768px) {
+  #partners-content .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  #partners-content .flex > div {
+    width: 100% !important;
+  }
+  #partners-content img {
+    margin: 0 auto;
+  }
+}
+
 
 /* CONTACT FORM */
 .contact-section form input,
@@ -373,3 +473,4 @@ section h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+ 

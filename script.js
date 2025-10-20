@@ -74,4 +74,47 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  // Navbar scroll effect et changement de couleur
+const navbar = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Gestion de l'active link
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
+
+// Si vous avez des sections avec scroll, vous pouvez activer automatiquement le link actif
+window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY + 100; // ajustez le décalage selon la navbar
+    navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if(section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+// Header scroll effect
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 50){
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
   
