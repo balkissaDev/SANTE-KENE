@@ -1,0 +1,79 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, #228B22 0%, #FFD700 100%);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    color: #228B22;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Présentation rapide */
+  .presentation {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .presentation h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Valeurs citoyennes */
+  .values {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .values-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  footer .socials a {
+    color: #FFD700;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  

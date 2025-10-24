@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  /* Cible l'image à l'intérieur du lien avec la classe 'logo' */
+.logo img {
+    height: 40px;   /* réduit la taille du logo */
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);  /* effet hover léger */
+  }
+  
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, #228B22, #FFD700, #B22234); /* couleurs Mali */
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .valeurs-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #fff, #f7f9f8);
+  }
+  
+  .valeurs-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .valeurs-texte {
+    flex: 1 1 500px;
+  }
+  
+  .valeurs-texte h2 {
+    font-size: 2rem;
+    color: #228B22;
+    margin-bottom: 20px;
+  }
+  
+  .valeurs-texte p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .valeurs-btns {
+    margin-top: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  .btn-primary {
+    background: #228B22;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .btn-primary:hover {
+    background: #1b6f1b;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid #228B22;
+    color: #228B22;
+  }
+  
+  .btn-secondary:hover {
+    background: #228B22;
+    color: #fff;
+  }
+  
+  .valeurs-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .valeurs-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .valeurs-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  .motivation-section {
+    text-align: center;
+    margin-top: 50px;
+    background: #228B22;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .motivation-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #FFD700;
+  }
+  
+  .motivation-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .valeurs-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .valeurs-image img {
+      max-width: 100%;
+    }
+  }
+  

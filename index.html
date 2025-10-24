@@ -108,6 +108,63 @@
           </ul>
         </div>
       </div>
+
+      <!-- Partenaires -->
+<section id="partners" class="py-16 bg-gray-50">
+  <div class="bg-white p-8 rounded-xl shadow-md cursor-pointer hover:scale-[1.02] transition-transform transform max-w-6xl mx-auto">
+    <!-- Titre -->
+    <h2 class="text-3xl font-bold flex justify-between items-center text-gray-800" data-target="partners-content">
+      Nos Partenaires 🤝
+      <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
+    </h2>
+
+    <!-- Contenu -->
+    <div id="partners-content" class="overflow-hidden max-h-0 opacity-0 mt-6 text-gray-700 transition-all duration-700 ease-in-out">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
+        
+        <!-- 🟢 Hedera -->
+        <div class="flex flex-col items-center text-center md:text-left md:items-start bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+          <img src="images/Hedera.png" alt="Hedera Logo" class="w-20 h-20 mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Hedera</h3>
+          <p>
+            Hedera est une plateforme technologique de nouvelle génération, bâtie sur un réseau public de blockchain sécurisé et durable. 
+            Grâce à son approche écoresponsable et sa technologie de registre distribué (DLT), Hedera soutient notre ambition de bâtir un écosystème 
+            de santé numérique transparent, éthique et durable.
+          </p>
+          <p class="mt-2 font-medium text-[var(--primary)]">
+            👉 Ensemble, nous posons les fondations d’une santé connectée et de confiance.
+          </p>
+        </div>
+
+        <!-- 🟠 ODC -->
+        <div class="flex flex-col items-center text-center md:text-left md:items-start bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+          <img src="images/ODC.png" alt="ODC Logo" class="w-20 h-20 mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">ODC – Orange Digital Center</h3>
+          <p>
+            Orange Digital Center (ODC) est un espace d’innovation, d’apprentissage et de co-création ouvert à tous. 
+            À travers ses programmes gratuits, il accompagne les jeunes, les développeurs et les startups du Mali dans leur montée en compétence, 
+            la réalisation de leurs projets et la recherche de financement.
+          </p>
+          <p class="mt-2 font-medium text-[var(--primary)]">
+            👉 Aux côtés de l’ODC, Santé Kènè renforce la formation numérique et favorise l’émergence de solutions locales 
+            pour une santé inclusive et connectée.
+          </p>
+        </div>
+      </div>
+
+      <!-- Phrase de transition -->
+      <p class="text-center mt-10 text-gray-600 italic">
+        Ensemble avec nos partenaires stratégiques, nous faisons converger <strong>innovation</strong>, 
+        <strong>inclusion</strong> et <strong>impact social</strong> pour bâtir un futur où la santé est à la fois 
+        <strong>digitale</strong>, <strong>humaine</strong> et <strong>durable</strong>.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
     <!-- Partenaires -->
 <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer hover:scale-105 transition-transform transform">
   <h2 class="text-2xl font-bold flex justify-between items-center text-gray-800" data-target="partners-content">
@@ -126,10 +183,18 @@
       <div class="md:w-3/4 text-gray-700 mt-4 md:mt-0">
        
         <p class="mt-2">
-          Hedera est une plateforme technologique Hedera, un réseau de blockchain public… Ensemble pour un écosystème de santé durable.
+          🤝 Hedera <br>
+
+          Hedera est une plateforme technologique de nouvelle génération, bâtie sur un réseau public de blockchain sécurisé et durable.
+          Grâce à son approche écoresponsable et sa technologie de registre distribué (DLT), Hedera soutient notre ambition de bâtir un écosystème de santé numérique transparent, éthique et durable.
+          👉 Ensemble, nous posons les fondations d’une santé connectée et de confiance.
         </p>
         <p>
-          ODC Orange Digitale Center est un lieu d'innovation et de formation gratuit qui soutient le développement des compétences numériques et l'entrepreneuriat. Il regroupe plusieurs entités pour accompagner les jeunes et les startups, de la formation au développement de projet jusqu'au financement.
+          🤝ODC – Orange Digital Center <br>
+
+          Orange Digital Center (ODC) est un espace d’innovation, d’apprentissage et de co-création ouvert à tous.
+          À travers ses programmes gratuits, il accompagne les jeunes, les développeurs et les startups du Mali dans leur montée en compétence, la réalisation de leurs projets et la recherche de financement.
+          👉 Aux côtés de l’ODC, Santé Kènè renforce la formation numérique et favorise l’émergence de solutions locales pour une santé inclusive et connectée.
         </p>
       </div>
     </div>
@@ -178,14 +243,12 @@
 <section id="how-it-works" class="py-20 px-6 bg-white">
   <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Comment <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">ça marche</span></h2>
-      
       <div class="flex flex-col md:flex-row justify-center items-stretch space-y-8 md:space-y-0 md:space-x-8">
           <div class="flex-1 flex flex-col items-center p-6 rounded-xl bg-gray-50">
               <div class="w-20 h-20 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-bold text-2xl mb-6">1</div>
               <h3 class="text-xl font-bold text-gray-800 mb-4">Décrivez vos symptômes</h3>
               <p class="text-gray-600 text-center">Parlez à notre chatbot pour expliquer vos préoccupations de santé.</p>
           </div>
-          
           <div class="flex-1 flex flex-col items-center p-6 rounded-xl bg-gray-50">
               <div class="w-20 h-20 rounded-full bg-[var(--secondary)] text-white flex items-center justify-center font-bold text-2xl mb-6">2</div>
               <h3 class="text-xl font-bold text-gray-800 mb-4">Recevez une évaluation AI</h3>
@@ -201,14 +264,12 @@
   </div>
 </section>
 
-   
   <!-- Section Équipe -->
 <section id="team" class="py-20 px-6 bg-gray-50">
     <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">👥 Notre Équipe</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        
         <!-- Membre 1 - Femme -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
           <img src="images\-avatar-homme-illustration-vectorielle_268834-538.jpg" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
@@ -237,8 +298,8 @@
           <h3 class="text-xl font-bold text-gray-800">Aboubacar Bane</h3>
           <p class="text-gray-600 mb-2">Développeur Fullstack</p>
           <div class="flex justify-center space-x-4 mt-2">
-            <a href="https://linkedin.com/" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">LinkedIn</a>
-            <a href="https://github.com/" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">GitHub</a>
+            <a href="https://www.linkedin.com/in/aboubacar-bane-a80426200/" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">LinkedIn</a>
+            <a href=" https://github.com/aboubacarbane" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">GitHub</a>
           </div>
         </div>
   
@@ -248,11 +309,10 @@
           <h3 class="text-xl font-bold text-gray-800">Yaya Diakite</h3>
           <p class="text-gray-600 mb-2">admin systèmes,réseaux et sécurité</p>
           <div class="flex justify-center space-x-4 mt-2">
-            <a href="#" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">LinkedIn</a>
-            <a href="#" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">GitHub</a>
+            <a href="https://LinkedIn.com/in/yayalinformaticien" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">LinkedIn</a>
+            <a href="https://github.com/yayafankele" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">GitHub</a>
           </div>
         </div>
-  
         <!-- Ajouter d'autres membres ici si nécessaire -->
          <!-- Membre 4 - Femme -->
          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
@@ -266,7 +326,7 @@
           </div>
           <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
             <img src="images\-avatar-profile-icon-transparent-600nw-2534623311.webp" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-            <h3 class="text-xl font-bold text-gray-800">Asetou</h3>
+            <h3 class="text-xl font-bold text-gray-800">Assetou DIARRA</h3>
             <p class="text-gray-600 mb-2">Developpeuse</p>
             <div class="flex justify-center space-x-4 mt-2">
               <a href="#" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">LinkedIn</a>
@@ -277,70 +337,45 @@
     </div>
   </section>
   
-
-  
-  
-
  <!-- Contact Section -->
- <section id="contact" class="py-20 px-6 bg-gray-50">
-  <div class="container mx-auto max-w-5xl">
+<section id="contact" class="py-20 px-6 bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto max-w-3xl">
     
     <!-- Titre -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">📬 Restons connectés</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
+      📬 Restons connectés
+    </h2>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      
-      <!-- Formulaire de contact -->
+    <!-- Formulaire de contact centré -->
+    <form id="contact-form" class="bg-white p-8 rounded-2xl shadow-lg space-y-6">
       <div>
-        <form id="contact-form" class="bg-white p-8 rounded-xl shadow-md space-y-6">
-          <div>
-            <label for="name" class="block text-gray-700 font-medium mb-2">Nom</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
-          </div>
-          <div>
-            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
-          </div>
-          <div>
-            <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
-            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
-          </div>
-          <div>
-            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">Envoyer mon message</button>
-        </form>
+        <label for="name" class="block text-gray-700 font-medium mb-2">Nom</label>
+        <input type="text" id="name" name="name" required
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
       </div>
-      
-      <!-- Coordonnées et réseaux -->
-      <div class="flex flex-col justify-between">
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4 text-gray-700">📍 Coordonnées</h3>
-          <p class="text-gray-600 mb-2">Email : <a href="mailto:contact@santekene.io" class="text-[var(--primary)] hover:underline">contact@santekene.io</a></p>
-          <p class="text-gray-600 mb-2">Siège : Bamako, Mali</p>
-        </div>
-        
-        <div class="mb-8">
-          
-          <div class="flex space-x-4">
-          
-            <a href="https://twitter.com/" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">X</a>
-            <a href="#" target="_blank" class="text-[var(--primary)] hover:text-[var(--secondary)]">GitHub</a>
-           
-          </div>
-        </div>
-        
-        <div class="text-center">
-          <p class="text-gray-700 text-lg mb-4">💬 Ensemble, construisons une Afrique plus saine et connectée.</p>
-          <a href="#signup" class="inline-block bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300">Rejoindre la communauté Santé Kènè</a>
-        </div>
+      <div>
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
       </div>
-      
-    </div>
-    
+      <div>
+        <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
+        <input type="text" id="subject" name="subject" required
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
+      </div>
+      <div>
+        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"></textarea>
+      </div>
+      <button type="submit"
+              class="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white py-3 rounded-lg font-medium hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+        Envoyer mon message
+      </button>
+    </form>
   </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-gray-400 py-12 px-6 relative">

@@ -1,0 +1,92 @@
+footer {
+    background-color: #228B22; /* vert Mali */
+    color: #fff;
+    padding: 40px 0 20px 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1 1 250px;
+  }
+  
+  .footer-about h3,
+  .footer-links h4,
+  .footer-contact h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #FFD700; /* jaune Mali */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #B22234; /* rouge Mali */
+  }
+  
+  .footer-contact p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #FFD700;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #FFD700; /* jaune Mali */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .social-icons a {
+      margin: 10px;
+    }
+  }
+  
