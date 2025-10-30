@@ -708,3 +708,70 @@ body {
   }
 }
  
+
+/* ---- Tablette (max 992px) ---- */
+@media (max-width: 992px) {
+  .accueil-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .accueil-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .accueil-text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .accueil-image img {
+    max-width: 400px;
+  }
+
+  .bubble1,
+  .bubble2 {
+    display: none; /* on allège sur tablette */
+  }
+}
+
+/* ---- Mobile (max 600px) ---- */
+@media (max-width: 600px) {
+  .accueil-section {
+    padding: 40px 15px;
+  }
+
+  .accueil-text h1 {
+    font-size: 2rem;
+  }
+
+  .accueil-text p {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .accueil-image img {
+    max-width: 320px;
+  }
+}
+
+/* ---- Grand écran (min 1200px) ---- */
+@media (min-width: 1200px) {
+  .accueil-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .accueil-text p {
+    font-size: 1.2rem;
+  }
+
+  .accueil-image img {
+    max-width: 550px;
+  }
+}
+
