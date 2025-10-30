@@ -117,4 +117,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
-  
+  // Animation d’écriture automatique sur "Bienvenue sur Santé Kènè"
+const textElement = document.getElementById("typing-text");
+const text = "🌿 Bienvenue sur Santé Kènè";
+textElement.innerHTML = ""; 
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    textElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 80);
+  }
+}
+window.addEventListener("load", typeEffect);
