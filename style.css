@@ -277,9 +277,15 @@ body {
 
 .logo {
   font-weight: bold;
+  height: 1000px;
   font-size: 1.5rem;
   color: var(--primary);
 }
+.navbar-logo {
+  height: 100px;
+  width: auto;
+}
+
 
 .nav-links {
   display: flex;

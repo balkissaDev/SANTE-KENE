@@ -21,7 +21,8 @@
         <div class="text-2xl font-bold flex items-center">
             <!-- Exemple de logo dans la navbar -->
 <div class="flex items-center">
-    <img src="images\logoSANTE KENE (2).jpeg" alt="" class="h-10 w-auto mr-2">
+  <img src="images/logoSANTE KENE (2).jpeg" alt="Logo Santé Kènè" class="navbar-logo mr-2">
+
     <span class="text-2xl font-bold bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
       SanteKene
     </span>
@@ -30,10 +31,9 @@
 
         <div class="hidden md:flex items-center space-x-8">
             <a href="#accueil">Accueil</a>
-            <a href="#features">Fonctionnalités</a>
-            <a href="#vision-content">Vision</a>
+            <a href="#vision-section">Vision</a>
             <a href="#vision-section">Partenaires</a>
-            
+            <a href="#fonctionnalites">Fonctionnalités</a>
             <a href="#team">Équipe</a>
             <a href="#contact">Contact</a>
         </div>
@@ -47,9 +47,10 @@
 
     <div id="mobile-menu" class="hidden bg-white w-full shadow-md z-50">
       <a href="#accueil" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Accueil</a>
-      <a href="#features" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Fonctionnalités</a>
-      <a href="#vision-content" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Vision</a>
+      <a href="#vision-section" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Vision</a>
       <a href="#vision-section" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Partenaires</a>
+      <a href="#fonctionnalites" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Fonctionnalités</a>
+     
       <a href="#team" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Équipe</a>
       <a href="#contact" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Contact</a>
 
@@ -72,14 +73,12 @@
       </p>
       <div class="accueil-buttons">
         <a href="#features" class="btn-primary">Explorer les fonctionnalités</a>
-       
       </div>
     </div>
 
     <!-- Image à droite -->
     <div class="accueil-image">
       <img src="images/data_nurse-996x567.webp" alt="Santé connectée" />
-      images/téléchargement.jpg
       <div class="bubble bubble1"></div>
       <div class="bubble bubble2"></div>
     </div>
@@ -161,38 +160,84 @@
 </section>
     
   <!-- Fonctionnalités -->
-<section id="features" class="py-20 px-6 bg-gray-50">
+<section id="fonctionnalites" class="py-20 px-6 bg-gray-50">
   <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Nos <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">Fonctionnalités</span></h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
-                  <i data-feather="mic" class="text-[var(--primary)] w-8 h-8"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Chatbot vocal multilingue</h3>
-              <p class="text-gray-600">Interagissez naturellement en français, anglais ou langues locales grâce à notre chatbot intelligent.</p>
-          </div>
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">
+      Nos <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
+        Fonctionnalités
+      </span>
+    </h2>
 
-          <!-- Feature 2 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <div class="w-16 h-16 bg-[var(--secondary)]/10 rounded-full flex items-center justify-center mb-6">
-                  <i data-feather="shield" class="text-[var(--secondary)] w-8 h-8"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Sécurité blockchain</h3>
-              <p class="text-gray-600">Toutes les données médicales sont sécurisées et traçables grâce à Hedera Hashgraph.</p>
-          </div>
-          <!-- Feature 3 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
-                  <i data-feather="award" class="text-[var(--primary)] w-8 h-8"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Points santé</h3>
-              <p class="text-gray-600">Gagnez des KÈNÈPOINTS pour suivre votre santé et compléter vos activités.</p>
-          </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="mic" class="text-[var(--primary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Chatbot vocal multilingue</h3>
+        <p class="text-gray-600">
+          Interagissez naturellement en français, anglais ou langues locales grâce à notre chatbot intelligent.
+        </p>
       </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--secondary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="shield" class="text-[var(--secondary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Sécurité blockchain</h3>
+        <p class="text-gray-600">
+          Toutes les données médicales sont sécurisées et traçables grâce à Hedera Hashgraph.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="award" class="text-[var(--primary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Points santé (KÈNÈPOINTS)</h3>
+        <p class="text-gray-600">
+          Gagnez des KÈNÈPOINTS pour suivre votre santé, consulter, partager des dossiers ou participer à la communauté.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--secondary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="video" class="text-[var(--secondary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Téléconsultation à distance</h3>
+        <p class="text-gray-600">
+          Consultez un médecin en ligne via chat, audio ou vidéo — en toute confidentialité et avec chiffrement sécurisé.
+        </p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="folder" class="text-[var(--primary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Dossier Médical Électronique (DSE)</h3>
+        <p class="text-gray-600">
+          Accédez à vos ordonnances, analyses et comptes rendus à tout moment. Stockage sécurisé via MySQL et Hedera HFS.
+        </p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-[var(--secondary)]/10 rounded-full flex items-center justify-center mb-6">
+          <i data-feather="bar-chart-2" class="text-[var(--secondary)] w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Tableau de bord santé communautaire</h3>
+        <p class="text-gray-600">
+          Suivez les indicateurs de santé communautaires et mesurez l’impact des actions locales sur la santé publique.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
+
 <!-- Comment ça marche -->
 <section id="how-it-works" class="py-20 px-6 bg-white">
   <div class="container mx-auto">
