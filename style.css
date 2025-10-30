@@ -297,69 +297,220 @@ body {
   color: var(--primary);
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, var(--primary), #3b82f6);
-  color: white;
-  text-align: center;
-  padding: 6rem 2rem;
+/* --- HERO --- */
+.accueil-section {
+  background: linear-gradient(120deg, #e0f7f4, #f7fdfc);
+  overflow: hidden;
+  padding: 5rem 1.5rem;
 }
 
-.hero h1 {
+.accueil-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.accueil-section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(120deg, #e0f7f4, #f7fdfc);
+}
+
+.accueil-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 3rem;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+/* Colonne texte à gauche */
+.accueil-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.accueil-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.1rem;
+.accueil-text h1 span {
+  color: #00bfa5; /* couleur accentuée */
+}
+
+.accueil-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
   margin-bottom: 2rem;
 }
 
-.hero button {
-  background: white;
-  color: var(--primary);
-  border: none;
-  padding: 0.8rem 1.8rem;
-  border-radius: 25px;
-  cursor: pointer;
+.accueil-buttons a {
+  padding: 0.75rem 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
   font-weight: 600;
-  transition: background 0.3s;
 }
 
-.hero button:hover {
-  background: #f0f0f0;
+/* Colonne image à droite */
+.accueil-image {
+  flex: 1;
+  text-align: right;
+  min-width: 300px;
+  position: relative; /* pour les bulles */
 }
 
-/* GRILLE GÉNÉRALE */
-.grid {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 2rem;
+.accueil-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 
-/* CARTES */
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.card img {
-  width: 100px;
-  height: 100px;
+/* Bulles décoratives */
+.bubble {
+  position: absolute;
   border-radius: 50%;
+  opacity: 0.3;
+  background: #00bfa5;
+}
+
+.bubble1 {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  right: 50px;
+}
+
+.bubble2 {
+  width: 50px;
+  height: 50px;
+  bottom: -10px;
+  right: 20px;
+}
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 768px) {
+  .accueil-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accueil-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+.accueil-text {
+  flex: 1;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-in-out forwards;
+}
+
+.accueil-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
   margin-bottom: 1rem;
 }
 
-/* TITRES */
-section h2 {
-  text-align: center;
-  color: var(--primary);
-  font-size: 2rem;
-  margin-top: 3rem;
+.accueil-text h1 span {
+  color: #059669;
 }
+
+.accueil-text p {
+  color: #4b5563;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 550px;
+  margin: 0 auto 1.5rem;
+}
+
+.accueil-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #059669, #10b981);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(5, 150, 105, 0.3);
+}
+
+.btn-secondary {
+  border: 2px solid #059669;
+  color: #059669;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #059669;
+  color: white;
+}
+
+
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.2);
+  filter: blur(30px);
+  z-index: -1;
+  animation: pulse 5s infinite alternate;
+}
+
+.bubble1 {
+  width: 120px;
+  height: 120px;
+  top: -30px;
+  right: 60px;
+}
+
+.bubble2 {
+  width: 180px;
+  height: 180px;
+  bottom: -40px;
+  left: 40px;
+}
+
+
+
+/* --- Responsive --- */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .hero-text p {
+    margin-left: 0;
+  }
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+}
+
 /* Partenaires responsive */
 #partners-content .flex {
   align-items: center;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santé Kènè. - Vitrine</title>
+    <title>SanteKene. - Vitrine</title>
 <!-- Pour un favicon PNG -->
 <link rel="icon" type="image/png" href="images\logoSANTE KENE (2).jpeg">
     <!-- Tailwind & Fonts -->
@@ -23,13 +23,13 @@
 <div class="flex items-center">
     <img src="images\logoSANTE KENE (2).jpeg" alt="" class="h-10 w-auto mr-2">
     <span class="text-2xl font-bold bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
-      Santé Kènè
+      SanteKene
     </span>
 </div>
         </div>
 
         <div class="hidden md:flex items-center space-x-8">
-            <a href="#hero">Accueil</a>
+            <a href="#accueil">Accueil</a>
             <a href="#features">Fonctionnalités</a>
             <a href="#vision-content">Vision</a>
             <a href="#vision-section">Partenaires</a>
@@ -46,49 +46,46 @@
     </div>
 
     <div id="mobile-menu" class="hidden bg-white w-full shadow-md z-50">
-      <a href="#hero" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Accueil</a>
+      <a href="#accueil" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Accueil</a>
       <a href="#features" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Fonctionnalités</a>
       <a href="#vision-content" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Vision</a>
       <a href="#vision-section" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Partenaires</a>
       <a href="#team" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Équipe</a>
       <a href="#contact" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Contact</a>
-      
+
   </div>
-  
+
 </nav>
 
-<!-- Hero / Accueil -->
-<!-- Hero Section -->
-<section class="relative bg-gray-50 overflow-hidden py-20">
-    <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-      
-      <!-- Texte à gauche -->
-      <div class="md:w-1/2 flex flex-col justify-center space-y-6">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
-          Bienvenue sur Santé Kènè
-        </h1>
-        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
-          Santé Kènè est une plateforme décentralisée de télémédecine basée sur Hedera Hashgraph et l’intelligence artificielle, offrant un accès rapide, sécurisé et équitable aux soins de santé pour tous les Africains.
-        
-          <div class="flex justify-center mt-4">
+<!-- Section  Accueil -->
+<section id="accueil" class="accueil-section">
 
-          <a href="#features" class="inline-block bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300">
-            Explorer les fonctionnalités
-          </a>
-        </div>
-        
+
+  <div class="accueil-container">
+    <!-- Texte à gauche -->
+    <div class="accueil-text">
+      <h1> Bienvenue sur <span>Santé Kènè</span></h1>
+      <p>
+        Santé Kènè est une plateforme décentralisée de télémédecine, basée sur
+        <strong>Hedera Hashgraph</strong> et l’<strong>intelligence artificielle</strong>,
+        pour un accès rapide, sécurisé et équitable aux soins de santé en Afrique.
+      </p>
+      <div class="accueil-buttons">
+        <a href="#features" class="btn-primary">Explorer les fonctionnalités</a>
        
       </div>
-      
-      <!-- Image à droite -->
-      <div class="md:w-1/2 flex justify-center relative">
-        <img src="images\téléchargement.jpg" alt="Dé Santé KÈNE" class="max-w-xs md:max-w-md animate-bounce shadow-lg rounded-xl">
-        <!-- Élément décoratif animé -->
-        <div class="absolute -top-10 -right-10 w-16 h-16 bg-[var(--primary)]/20 rounded-full animate-spin-slow"></div>
-        <div class="absolute bottom-0 left-0 w-24 h-24 bg-[var(--secondary)]/20 rounded-full animate-pulse"></div>
-      </div>
     </div>
-  </section>
+
+    <!-- Image à droite -->
+    <div class="accueil-image">
+      <img src="images/téléchargement.jpg" alt="Santé connectée" />
+      
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Section Vision & Partenaires -->
   <section id="vision-section" class="py-16 px-6 bg-gray-50">
@@ -122,7 +119,6 @@
     <div id="partners-content" class="overflow-hidden max-h-0 opacity-0 mt-6 text-gray-700 transition-all duration-700 ease-in-out">
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
-        
         <!-- 🟢 Hedera -->
         <div class="flex flex-col items-center text-center md:text-left md:items-start bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
           <img src="images/Hedera.png" alt="Hedera Logo" class="w-20 h-20 mb-4">
@@ -159,55 +155,15 @@
         <strong>inclusion</strong> et <strong>impact social</strong> pour bâtir un futur où la santé est à la fois 
         <strong>digitale</strong>, <strong>humaine</strong> et <strong>durable</strong>.
       </p>
-
-    </div>
-  </div>
-</section>
-
-
-    <!-- Partenaires -->
-<div class="bg-white p-6 rounded-xl shadow-md cursor-pointer hover:scale-105 transition-transform transform">
-  <h2 class="text-2xl font-bold flex justify-between items-center text-gray-800" data-target="partners-content">
-    Partenaires 🤝
-    <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-  </h2>
-  <div id="partners-content" class="overflow-hidden max-h-0 opacity-0 mt-4 text-gray-700 transition-all duration-700 ease-in-out">
-    <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
-      <!-- Logos à gauche -->
-      <div class="flex space-x-4 md:flex-col md:space-x-0 md:space-y-4 md:w-1/4">
-       
-        <img src="images/Hedera.png" alt="Hedera Logo" class="w-16 h-16">
-        <img src="images/ODC.png" alt="ODC Logo" class="w-16 h-16">
-      </div>
-      <!-- Texte à droite -->
-      <div class="md:w-3/4 text-gray-700 mt-4 md:mt-0">
-       
-        <p class="mt-2">
-          🤝 Hedera <br>
-
-          Hedera est une plateforme technologique de nouvelle génération, bâtie sur un réseau public de blockchain sécurisé et durable.
-          Grâce à son approche écoresponsable et sa technologie de registre distribué (DLT), Hedera soutient notre ambition de bâtir un écosystème de santé numérique transparent, éthique et durable.
-          👉 Ensemble, nous posons les fondations d’une santé connectée et de confiance.
-        </p>
-        <p>
-          🤝ODC – Orange Digital Center <br>
-
-          Orange Digital Center (ODC) est un espace d’innovation, d’apprentissage et de co-création ouvert à tous.
-          À travers ses programmes gratuits, il accompagne les jeunes, les développeurs et les startups du Mali dans leur montée en compétence, la réalisation de leurs projets et la recherche de financement.
-          👉 Aux côtés de l’ODC, Santé Kènè renforce la formation numérique et favorise l’émergence de solutions locales pour une santé inclusive et connectée.
-        </p>
-      </div>
     </div>
   </div>
 </div>
-
 </section>
-
+    
   <!-- Fonctionnalités -->
 <section id="features" class="py-20 px-6 bg-gray-50">
   <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Nos <span class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">Fonctionnalités</span></h2>
-      
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Feature 1 -->
           <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
@@ -226,7 +182,6 @@
               <h3 class="text-xl font-bold text-gray-800 mb-3">Sécurité blockchain</h3>
               <p class="text-gray-600">Toutes les données médicales sont sécurisées et traçables grâce à Hedera Hashgraph.</p>
           </div>
-
           <!-- Feature 3 -->
           <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
               <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-6">
@@ -238,7 +193,6 @@
       </div>
   </div>
 </section>
-
 <!-- Comment ça marche -->
 <section id="how-it-works" class="py-20 px-6 bg-white">
   <div class="container mx-auto">
@@ -268,7 +222,7 @@
 <section id="team" class="py-20 px-6 bg-gray-50">
     <div class="container mx-auto max-w-6xl">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">👥 Notre Équipe</h2>
-      
+
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <!-- Membre 1 - Femme -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
@@ -283,7 +237,7 @@
   
         <!-- Membre 2 - Femme -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
-          <img src="images\bocphoto.jpg" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+          <img src="images\-avatar-profile-icon-transparent-600nw-2534623311.webp" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
           <h3 class="text-xl font-bold text-gray-800">Balkissa Oumar CISSE</h3>
           <p class="text-gray-600 mb-2">Développeuse de la vitrine digital</p>
           <div class="flex justify-center space-x-4 mt-2">
@@ -294,7 +248,7 @@
   
         <!-- Membre 3 - Homme -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
-          <img src="images\WhatsApp Image 2025-10-16 at 10.05.43.jpeg" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+          <img src="images\-avatar-homme-illustration-vectorielle_268834-538.jpg" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
           <h3 class="text-xl font-bold text-gray-800">Aboubacar Bane</h3>
           <p class="text-gray-600 mb-2">Développeur Fullstack</p>
           <div class="flex justify-center space-x-4 mt-2">
@@ -305,7 +259,7 @@
   
         <!-- Membre 4 - Homme -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center p-6 transition-transform transform hover:scale-105">
-          <img src="images\-avatar-profile-icon-transparent-600nw-2534623311.webp" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+          <img src="images\-avatar-homme-illustration-vectorielle_268834-538.jpg" alt="Nom du membre" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
           <h3 class="text-xl font-bold text-gray-800">Yaya Diakite</h3>
           <p class="text-gray-600 mb-2">admin systèmes,réseaux et sécurité</p>
           <div class="flex justify-center space-x-4 mt-2">
@@ -386,7 +340,7 @@
         <div class="flex flex-col items-start space-y-2">
           <div class="flex items-center space-x-2">
             <img src="images\logoSANTE KENE (2).jpeg" alt="Logo Santé Kènè" class="w-10 h-10 rounded-full">
-            <span class="text-white font-bold text-xl">Santé Kènè</span>
+            <span class="text-white font-bold text-xl">SanteKene</span>
           </div>
           <p class="text-gray-400 mt-2 max-w-xs">
             Ensemble, construisons une Afrique plus saine et connectée.
@@ -420,7 +374,7 @@
   
       <!-- Ligne de séparation -->
       <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
-        © 2025 Santé Kènè. Tous droits réservés.
+        © 2025 SanteKene. Tous droits réservés.
       </div>
     </div>
   
